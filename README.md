@@ -96,7 +96,7 @@ src/
 ![Vista general del chat](src/public/img/Registro.png)
 
 ### 🧍‍♂️ Envío de Mensajes con Perfil  
-![Mensajes en tiempo real](src/public/img/image.png)
+![Mensajes en tiempo real](src/public/img/image1.png)
 
 ---
 
