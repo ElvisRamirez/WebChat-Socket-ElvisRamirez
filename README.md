@@ -93,10 +93,10 @@ src/
 ## 🖼️ Capturas de Pantalla
 
 ### 🧵 Vista del Chat General  
-![Vista general del chat](src/public/img/uso.png)
+![Vista general del chat](src/public/img/Registro.png)
 
 ### 🧍‍♂️ Envío de Mensajes con Perfil  
-![Mensajes en tiempo real](src/public/img/perfil.png)
+![Mensajes en tiempo real](src/public/img/image.png)
 
 ---
 
