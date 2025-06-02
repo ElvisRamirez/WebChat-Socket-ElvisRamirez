@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Chat.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Chat</h1>
+  </header>
+  <main>
+    <div class="chat-container">
+      <div id="all-messages" class="messages-panel"></div>
+      <aside class="sidebar">
+        <h3>Usuarios conectados</h3>
+        <ul id="user-list"></ul>
+      </aside>
+    </div>
+    <div class="send-message">
+      <input
+        type="text"
+        id="message"
+        placeholder="Escribe un mensaje..."
+        autocomplete="off"
+      />
+      <button type="button" id="send-message" class="btn secondary">➤</button>
+    </div>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

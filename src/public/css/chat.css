@@ -1,0 +1,176 @@
+#users-panel {
+  width: 250px;
+  background: #ededed;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+#users-panel h3 {
+  margin-top: 0;
+  color: #075e54;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#users-list li {
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  background: #fff;
+  border-radius: 5px;
+  cursor: default;
+  transition: background-color 0.3s;
+}
+
+#users-list li:hover {
+  background-color: #d4f7dc;
+  color: #128c7e;
+  font-weight: 600;
+}
+
+#chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+#all-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #ece5dd;
+}
+
+.send-message {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background: #f0f0f0;
+}
+
+.send-message input[type='text'] {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.send-message input[type='text']:focus {
+  border-color: #25d366;
+}
+
+.send-message button {
+  background: #25d366;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0 15px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-message button:hover {
+  background: #128c7e;
+}
+
+/* Mensajes */
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.message .image-container {
+  flex-shrink: 0;
+}
+
+.message .image-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message .message-body {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 7px;
+  margin-left: 8px;
+  position: relative;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 0.1);
+}
+
+.message .message-body .user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.message .message-body .username {
+  font-weight: 600;
+  color: #075e54;
+}
+
+.message .message-body .time {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+/* Estilos para mensajes enviados por el usuario (alineados a la derecha) */
+.message.sent {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.message.sent .message-body {
+  background: #dcf8c6;
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.message.sent .image-container img {
+  border: 2px solid #25d366;
+}
+
+/* Estilos para mensajes recibidos (alineados a la izquierda) */
+.message.received {
+  /* valores por defecto */
+}
+.sidebar {
+  width: 200px;
+  background: #f1f1f1;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}

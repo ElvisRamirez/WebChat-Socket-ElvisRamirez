@@ -1,0 +1,105 @@
+/* /css/register.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5ddd5; /* color fondo similar WhatsApp */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #075e54; /* verde oscuro WhatsApp */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #202c33; /* texto casi negro de WhatsApp */
+}
+
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+
+.input-group input[type="text"]:focus {
+  border-color: #25d366; /* verde WhatsApp */
+  background-color: #fff;
+  box-shadow: 0 0 5px #25d366aa;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn.primary {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px #25d366aa;
+  user-select: none;
+}
+
+.btn.primary:hover {
+  background-color: #128c4a;
+  box-shadow: 0 6px 12px #128c4aaa;
+}
+
+.btn.primary:active {
+  background-color: #0b5d36;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 2rem;
+  }
+  .btn.primary {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+}
